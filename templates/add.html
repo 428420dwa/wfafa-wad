@@ -1,0 +1,9 @@
+<h2>Ticket List</h2>
+<table>
+    <thead><tr><th>ID</th><th>Name</th><th>Price</th></tr></thead>
+    <tbody>
+        {% for ticket in tickets %}
+        <tr><td>{{ ticket[0] }}</td><td>{{ ticket[1] }}</td><td>{{ ticket[2] }}</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
